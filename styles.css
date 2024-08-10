@@ -32,6 +32,7 @@ ul {
 
 li {
     margin-bottom: 10px;
+    margin: 5px;
 }
 
 a {
@@ -47,7 +48,7 @@ a:hover {
     text-decoration: underline;
 }
 
-a.cyberpunk {
+a.cyberpink {
     color: white;
     background: linear-gradient(to right, #8a2be2, #ff1493);
     background-size: 200% auto; /* Double the width for animation */
@@ -59,7 +60,7 @@ a.cyberpunk {
     background-position: 0 0; /* Initial position */
 }
 
-a.cyberpunk:hover {
+a.cyberpink:hover {
     background-position: 100% 0; /* Shift the background on hover */
     text-decoration: underline; /* Adds underline on hover */
 }
