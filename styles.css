@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px; /* Optional: adds rounded corners */
+    display: inline-block /* Allows padding and border-radius to take effect */
+}
+
+ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+
+}
+
+a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.cyberpunk {
+    color: white;
+    background: linear-gradient(to right, #8a2be2, #ff1493);
+    background-size: 200% auto; /* Double the width for animation */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-position 0.5s ease, color 0.3s ease; /* Smooth transition */
+    background-position: 0 0; /* Initial position */
+}
+
+a.cyberpunk:hover {
+    background-position: 100% 0; /* Shift the background on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    font-weight: bold;
+}
