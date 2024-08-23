@@ -1,14 +1,12 @@
-
-
 body {
     background-color: #000000;
     opacity: 0.9;
-    background-image:  linear-gradient(30deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(150deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(30deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(150deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(60deg, #0c0c0c77 25%, transparent 25.5%, transparent 75%, #0c0c0c77 75%, #0c0c0c77), linear-gradient(60deg, #0c0c0c77 25%, transparent 25.5%, transparent 75%, #0c0c0c77 75%, #0c0c0c77);
+    background-image: linear-gradient(30deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(150deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(30deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(150deg, #0c0c0c 12%, transparent 12.5%, transparent 87%, #0c0c0c 87.5%, #0c0c0c), linear-gradient(60deg, #0c0c0c77 25%, transparent 25.5%, transparent 75%, #0c0c0c77 75%, #0c0c0c77), linear-gradient(60deg, #0c0c0c77 25%, transparent 25.5%, transparent 75%, #0c0c0c77 75%, #0c0c0c77);
     background-size: 20px 35px;
     background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
     font-family: 'Courier New', monospace;
     color: white;
-  }
+}
 
 .container {
     width: 80%;
@@ -16,13 +14,20 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: white;
     background: linear-gradient(to right, #8a2be2, #ff1493);
     padding: 10px;
     margin: 10px;
-    border-radius: 5px; /* Optional: adds rounded corners */
-    display: inline-block /* Allows padding and border-radius to take effect */
+    border-radius: 5px;
+    /* Optional: adds rounded corners */
+    display: inline-block
+        /* Allows padding and border-radius to take effect */
 }
 
 ul {
@@ -51,18 +56,23 @@ a:hover {
 a.cyberpink {
     color: white;
     background: linear-gradient(to right, #8a2be2, #ff1493);
-    background-size: 200% auto; /* Double the width for animation */
+    background-size: 200% auto;
+    /* Double the width for animation */
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
-    transition: background-position 0.5s ease, color 0.3s ease; /* Smooth transition */
-    background-position: 0 0; /* Initial position */
+    transition: background-position 0.5s ease, color 0.3s ease;
+    /* Smooth transition */
+    background-position: 0 0;
+    /* Initial position */
 }
 
 a.cyberpink:hover {
-    background-position: 100% 0; /* Shift the background on hover */
-    text-decoration: underline; /* Adds underline on hover */
+    background-position: 100% 0;
+    /* Shift the background on hover */
+    text-decoration: underline;
+    /* Adds underline on hover */
 }
 
 hr {
