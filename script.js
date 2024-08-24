@@ -41,3 +41,28 @@ document.addEventListener("DOMContentLoaded", function() {
     const timerInterval = setInterval(updateTimer, 1000);
   });
 });
+
+function reorderEvents() {
+  const ul = document.getElementById('event-list');
+  const lis = Array.from(ul.getElementsByTagName('li'));
+  const now = new Date();
+
+  lis.sort((a, b) => {
+    const aDates = a.getAttribute('dates').split(',')
+      .map(date => new Date(date.trim()))
+      .filter(date => date > now && !isNaN(date));  // Only future dates
+    const bDates = b.getAttribute('dates').split(',')
+      .map(date => new Date(date.trim()))
+      .filter(date => date > now && !isNaN(date));  // Only future dates
+
+    const aMinDate = aDates.length ? Math.min(...aDates) : Infinity;
+    const bMinDate = bDates.length ? Math.min(...bDates) : Infinity;
+
+    return aMinDate - bMinDate;
+  });
+
+  // Re-append sorted <li> elements to the <ul>
+  lis.forEach(li => ul.appendChild(li));
+}
+
+reorderEvents();
