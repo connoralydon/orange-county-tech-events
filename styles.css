@@ -108,3 +108,9 @@ hr {
       opacity: 0;
     }
   }
+
+  .event-image {
+    width: 100%;
+    border: 2px solid #8a2be2;
+    border-radius: 7px;
+  }
